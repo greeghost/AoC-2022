@@ -39,5 +39,5 @@ def q2(rucksacks):
     return s
 
 
-print(f"question 1: {q1(input)}")  # 64929
-print(f"question 2: {q2(input)}")  # 193697
+print(f"question 1: {q1(input)}")  # 8109
+print(f"question 2: {q2(input)}")  # 2738
