@@ -28,4 +28,4 @@ def value(strategy, decrypt):
 
 
 print(f"question 1: {value(input, score_by_move)}")  # 10624
-print(f"question 1: {value(input, score_by_result)}")  # 14060
+print(f"question 2: {value(input, score_by_result)}")  # 14060

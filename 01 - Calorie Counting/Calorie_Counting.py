@@ -12,4 +12,4 @@ def sum_of_max(input, amount):
 
 
 print(f"question 1: {sum_of_max(input, 1)}")  # 64929
-print(f"question 1: {sum_of_max(input, 3)}")  # 193697
+print(f"question 2: {sum_of_max(input, 3)}")  # 193697
