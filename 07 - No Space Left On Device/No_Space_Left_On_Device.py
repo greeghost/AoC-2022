@@ -11,29 +11,27 @@ class File(object):
         return self._size
 
 
-class Folder(object):
+class Dir(object):
     def __init__(self, name, parent=None):
         self.name = name
-        self.folder_childs = []
+        self.dir_childs = []
         self.file_childs = []
-        # self.parent = parent
 
     def size(self):
-        s1 = sum([i.size() for i in self.folder_childs])
-        s2 = sum([i.size() for i in self.file_childs])
-        return s1 + s2
+        return sum([i.size() for i in self.dir_childs]) \
+            + sum([i.size() for i in self.file_childs])
 
     def q1(self, val=100000):
         res = 0
         if (size := self.size()) <= val:
             res += size
-        for f in self.folder_childs:
+        for f in self.dir_childs:
             res += f.q1()
         return res
 
     def register_size(self, mem):
         mem.append((self, self.size()))
-        for f in self.folder_childs:
+        for f in self.dir_childs:
             f.register_size(mem)
 
     def q2(self, tot=70000000, need=30000000):
@@ -54,9 +52,9 @@ def create_filesystem(input):
             continue
         if instr[:4] == "$ cd":
             name = instr[5:]
-            f = Folder(name)
+            f = Dir(name)
             if stack != []:
-                stack[-1].folder_childs.append(f)
+                stack[-1].dir_childs.append(f)
             stack.append(f)
         elif instr[:4] == "$ ls":
             continue
