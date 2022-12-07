@@ -3,14 +3,17 @@ with open("input.in", 'r') as fh:
 
 
 def diff_chars(stream, char_amount):
-    for i in range(char_amount, len(stream)):
+    i = char_amount
+    while i < len(stream):
         valid = True
         for c in range(i - char_amount, i):
             for d in range(c + 1, i):
                 if stream[c] == stream[d]:
                     valid = False
+                    skip = 1 + c + char_amount - i  # skip after the first repeated character
         if valid:
             return i
+        i += skip
 
 
 print(f"question 1: {diff_chars(input, 4)}")  # 1175
