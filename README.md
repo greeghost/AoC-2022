@@ -11,3 +11,5 @@ Here are my solutions for the 2022 edition of the [Advent of Code](https://adven
 - Day 5: Honestly I'm not proud of that one at all, I should redo it completely (and do a curses animation of some sort of crane moving crates around)
 - Day 6: Pretty proud of that one, nothing to change.
 - Day 7: Lots of boilerplate, and the `create_filesystem` parsing function is a bit clunky, but other than that it's fine.
+- Day 8: Some things could be factorized between the 4 directions in both functions, just did not have the motivation to do it.
+- Day 9: I used an iterator as the input because I did not want to keep track of the index of the last instruction, or to `pop(0)` them because of the complexity. This means I had to duplicate it for the two parts, which I am not really happy about. Another solution could be found.
