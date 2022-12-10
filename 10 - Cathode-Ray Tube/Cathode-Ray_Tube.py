@@ -1,4 +1,4 @@
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     input = fh.read().splitlines()
 
 
@@ -27,11 +27,11 @@ def q2_logic(input, interval=40):
     crt = ''
     for instr in input:
         if instr == "noop":
-            crt += "#" if abs((cycle % interval) - rax) <= 1 else '.'
+            crt += "█" if abs((cycle % interval) - rax) <= 1 else ' '
             cycle += 1
         else:
-            for _ in '..':
-                crt += "#" if abs((cycle % interval) - rax) <= 1 else '.'
+            for _ in '  ':
+                crt += "█" if abs((cycle % interval) - rax) <= 1 else ' '
                 cycle += 1
             rax += int(instr.split()[1])
     return crt
