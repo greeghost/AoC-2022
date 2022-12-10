@@ -1,7 +1,7 @@
 state = []
 instr = []
 
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     s = True
     for line in fh:
         if s and (line != "\n"):

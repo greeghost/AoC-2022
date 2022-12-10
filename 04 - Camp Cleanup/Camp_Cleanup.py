@@ -1,6 +1,6 @@
 input = []
 
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     for line in fh:
         [p1, p2] = line[:-1].split(",")
         [s1, s2] = p1.split("-")

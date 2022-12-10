@@ -1,4 +1,4 @@
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     input = list(map(lambda x: (
         list(map(lambda y: int(y),
                  x.split("\n")))),

@@ -1,4 +1,4 @@
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     input = list(map(
         lambda s: (s[:int(len(s) / 2)], s[int(len(s) / 2):]),
         fh.read().splitlines()))

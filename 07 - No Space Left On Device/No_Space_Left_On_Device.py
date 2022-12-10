@@ -1,4 +1,4 @@
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     input = fh.read().splitlines()
 
 

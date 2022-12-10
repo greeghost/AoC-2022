@@ -1,6 +1,6 @@
 from itertools import tee
 
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     input = map(lambda s: (str.split(s)[0], int(
         str.split(s)[1])), fh.read().splitlines())
 

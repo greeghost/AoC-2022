@@ -1,4 +1,4 @@
-with open("input.in", 'r') as fh:
+with open("test_input.in", 'r') as fh:
     input = list(map(lambda x: (x[0], x[2]), fh.read().split("\n")[:-1]))
 
 
