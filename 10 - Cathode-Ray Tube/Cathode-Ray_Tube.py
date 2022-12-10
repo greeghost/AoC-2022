@@ -27,11 +27,11 @@ def q2_logic(input, interval=40):
     crt = ''
     for instr in input:
         if instr == "noop":
-            crt += "#" if abs((cycle % interval) - rax) <= 1 else '.'
+            crt += "█" if abs((cycle % interval) - rax) <= 1 else ' '
             cycle += 1
         else:
-            for _ in '..':
-                crt += "#" if abs((cycle % interval) - rax) <= 1 else '.'
+            for _ in '  ':
+                crt += "█" if abs((cycle % interval) - rax) <= 1 else ' '
                 cycle += 1
             rax += int(instr.split()[1])
     return crt
