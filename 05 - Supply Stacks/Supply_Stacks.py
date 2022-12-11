@@ -51,5 +51,5 @@ def CrateMover9001(stacks, instr):
     return "".join([stack[-1] for stack in stacks_copy])
 
 
-print(f"question 1: {CrateMover9000(stacks, instr)}")  # 657
-print(f"question 2: {CrateMover9001(stacks, instr)}")  # 938
+print(f"question 1: {CrateMover9000(stacks, instr)}")  # TGWSMRBPN
+print(f"question 2: {CrateMover9001(stacks, instr)}")  # TZLTLWRNF

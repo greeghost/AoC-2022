@@ -68,5 +68,5 @@ def create_filesystem(input):
 
 filesystem = create_filesystem(input)
 
-print(f"question 1: {filesystem.q1()}")  # 1175
-print(f"question 2: {filesystem.q2()}")  # 3217
+print(f"question 1: {filesystem.q1()}")  # 1581595
+print(f"question 2: {filesystem.q2()}")  # 1544176

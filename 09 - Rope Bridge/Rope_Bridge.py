@@ -62,5 +62,5 @@ def tuple_sum(t1, t2):
 
 i1, i2 = tee(input)
 
-print(f"question 1: {RopeBridge(i1, 2).tail_visits()}")  # 1175
-print(f"question 2: {RopeBridge(i2, 10).tail_visits()}")  # 3217
+print(f"question 1: {RopeBridge(i1, 2).tail_visits()}")  # 5907
+print(f"question 2: {RopeBridge(i2, 10).tail_visits()}")  # 2303

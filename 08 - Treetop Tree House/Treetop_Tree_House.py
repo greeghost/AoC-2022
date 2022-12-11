@@ -78,5 +78,5 @@ def q2(input):
     return smax
 
 
-print(f"question 1: {q1(input)}")  # 1175
-print(f"question 2: {q2(input)}")  # 3217
+print(f"question 1: {q1(input)}")  # 1684
+print(f"question 2: {q2(input)}")  # 486540

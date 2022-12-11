@@ -101,5 +101,5 @@ packs[0].finish_initialization()
 packs[1].finish_initialization()
 
 
-print(f"question 1: {packs[0].q1()}")  # 1175
-print(f"question 2: {packs[1].q2()}")  # 3217
+print(f"question 1: {packs[0].q1()}")  # 56595
+print(f"question 2: {packs[1].q2()}")  # 15693274740

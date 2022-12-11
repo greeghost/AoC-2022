@@ -43,5 +43,5 @@ def q2(input, interval=40):
     return "\n" + "\n".join(q2l)
 
 
-print(f"question 1: {q1(input)}")  # 1175
-print(f"question 2: {q2(input)}")  # 3217
+print(f"question 1: {q1(input)}")  # 12880
+print(f"question 2: {q2(input)}")  # FCJAPJRE
