@@ -15,3 +15,7 @@ Here are my solutions for the 2022 edition of the [Advent of Code](https://adven
 - Day 9: I used an iterator as the input because I did not want to keep track of the index of the last instruction, or to `pop(0)` them because of the complexity. This means I had to duplicate it for the two parts, which I am not really happy about. Another solution could be found.
 - Day 10: Part 1 and part 2 are really independent in this one, which bothers me. I would like it if there was some reusing of part 1 in part 2.
 - Day 11: As I am writing this, I am refactoring the code into classes to make it nicer. However, I am not working on another solution for the weird `eval` + `MAGIC_OPERATION_CONSTANT` hack I made up to not parse the `Operation: ...` line at 6 AM.
+- Day 12: The code could be made much better by specifying the graph and not having to have 2 bfs functions
+- Day 13: ok. Parsing uses `eval` which is meh, but other than that everything is fine
+- Day 14: The complexity on that one is awful.
+- Day 15: The complexity on part 2 is even awful*er*
