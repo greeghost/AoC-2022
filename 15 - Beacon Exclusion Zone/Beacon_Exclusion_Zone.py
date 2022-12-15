@@ -99,5 +99,5 @@ class SubterraneanTunnel():
 
 st = SubterraneanTunnel(input)
 
-print(f"question 1: {st.no_beacon_on_row(10)}")  #
-print(f"question 2: {st.q2(0, 20)}")  #
+print(f"question 1: {st.no_beacon_on_row(10)}")  # 5299855
+print(f"question 2: {st.q2(0, 20)}")  # 13615843289729
