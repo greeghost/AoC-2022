@@ -24,17 +24,11 @@ class CaveSystem():
         if y == self.floor:
             return True
         for wall in self.walls:
-            if CaveSystem.intersects(wall, x, y):
-                return True
-        return False
-
-    @classmethod
-    def intersects(cls, wall, x, y):
-        for i in range(len(wall) - 1):
-            w1 = wall[i]
-            w2 = wall[i + 1]
-            if ((x - w1[0]) * (x - w2[0]) <= 0) and (y - w1[1]) * (y - w2[1]) <= 0:
-                return True
+            for i in range(len(wall) - 1):
+                w1 = wall[i]
+                w2 = wall[i + 1]
+                if ((x - w1[0]) * (x - w2[0]) <= 0) and (y - w1[1]) * (y - w2[1]) <= 0:
+                    return True
         return False
 
     def process_some_sand1(self):
