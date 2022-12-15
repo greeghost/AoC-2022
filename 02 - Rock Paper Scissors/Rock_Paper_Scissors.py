@@ -6,11 +6,11 @@ def score_by_move(a, b):
     rps1 = {"A": 0, "B": 1, "C": 2}
     rps2 = {"X": 0, "Y": 1, "Z": 2}
     s1, s2 = rps1[a], rps2[b]
-    if s1 == s2:
+    if s1 == s2:  # Tie
         return s2 + 4
-    elif (s1 + 1) % 3 == s2:
+    elif (s1 + 1) % 3 == s2:  # Victory
         return s2 + 7
-    return s2 + 1
+    return s2 + 1  # Defeat
 
 
 def score_by_result(a, b):
